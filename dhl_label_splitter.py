@@ -244,7 +244,7 @@ def run_gui(initial_files: List[str] = None):
             left_layout.addLayout(margin_layout)
 
             self.cb_merge = QCheckBox("Alle in einer Sammel-PDF zusammenführen")
-            self.cb_merge.setStyleSheet("font-weight: bold; color: #222;")
+            self.cb_merge.setStyleSheet("font-weight: bold; font-size: 12px;")
             left_layout.addWidget(self.cb_merge)
 
             self.btn_convert_all = QPushButton("Alle umwandeln (Batch)...")
@@ -292,7 +292,7 @@ def run_gui(initial_files: List[str] = None):
             left_layout.addWidget(self.btn_print_current)
 
             self.status_label = QLabel("Bereit")
-            self.status_label.setStyleSheet("color: #666; font-size: 12px;")
+            self.status_label.setStyleSheet("font-size: 12px;")
             left_layout.addWidget(self.status_label)
 
             main_layout.addWidget(left_panel)
